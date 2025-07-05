@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔥 Kipashio Aviator (Toleo Jekundu) 🔥</title>
+  <title>💎 Kipashio cha Dhahabu Aviator 💎</title>
   <style>
-    @keyframes glow {
-      0% { box-shadow: 0 0 6px #f00; }
-      50% { box-shadow: 0 0 25px #f00; }
-      100% { box-shadow: 0 0 6px #f00; }
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #121212;
+      color: #ffd700;
+      text-align: center;
+      padding: 40px;
     }
 
-    body{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background:#000;
-      color:#f44336; /* mwanga mwekundu */
-      text-align:center;
-      padding:40px;
-      line-height:1.55;
+    h1 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+      margin-bottom: 10px;
     }
-    h1{
-      font-size:2.4rem;
-      margin-bottom:8px;
-      letter-spacing:1px;
+
+    #subtitle {
+      font-size: 1.2rem;
+      color: #f1c40f;
+      margin-bottom: 30px;
     }
-    #subtitle{
-      font-size:1.15rem;
-      margin-bottom:28px;
-      color:#ff7961;
+
+    #signals {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      min-height: 60px;
     }
-    #signals{
-      margin-bottom:30px;
-      font-size:1.7rem;
-      min-height:60px;
+
+    button {
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 14px 32px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s ease;
     }
-    button{
-      background:#ff1744;
-      color:#fff;
-      border:none;
-      padding:14px 32px;
-      font-size:1.35rem;
-      cursor:pointer;
-      border-radius:10px;
-      animation:glow 1.8s infinite;
+
+    button:hover {
+      background-color: #e6c200;
     }
-    button:hover{
-      background:#ff4569;
+
+    #modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      z-index: 1000;
     }
-    #modal{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.9);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      visibility:hidden;
-      z-index:1000;
+
+    #modalContent {
+      background-color: #1b1b1b;
+      border: 2px solid #ffd700;
+      padding: 35px 25px;
+      border-radius: 14px;
+      color: #f8d568;
+      max-width: 90%;
+      width: 420px;
     }
-    #modalContent{
-      background:#1a0000;
-      padding:40px 28px;
-      border:2px solid #ff1744;
-      border-radius:18px;
-      max-width:92%;
-      width:430px;
-      color:#ff7961;
+
+    #modal h2 {
+      color: #ffdb4d;
+      margin-top: 0;
+      font-size: 1.9rem;
     }
-    #modal h2{
-      margin-top:0;
-      font-size:1.9rem;
-      color:#ff5252;
+
+    #modal a {
+      display: inline-block;
+      margin-top: 25px;
+      background: #ffd700;
+      color: #000;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
     }
-    #modal a{
-      display:inline-block;
-      margin-top:28px;
-      background:#ff1744;
-      color:#fff;
-      padding:14px 34px;
-      text-decoration:none;
-      font-weight:bold;
-      border-radius:12px;
-    }
-    #modal a:hover{
-      background:#ff4569;
+
+    #modal a:hover {
+      background: #f2c400;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Kipashio Aviator 🔥</h1>
-  <p id="subtitle">⚠️ Pata <strong>2</strong> ishara za bure, kisha fungua 🔓 hazina kamili ya faida kwa kujisajili!</p>
+  <h1>💎 Kipashio Aviator la Dhahabu 💎</h1>
+  <p id="subtitle">🥇 Pata <strong>2</strong> ishara za bure, kisha fungua mwelekeo wa ushindi mkubwa!</p>
 
   <div id="signals"></div>
-  <button id="getSignalBtn">💥 Pata Ishara</button>
+  <button id="getSignalBtn">⚡️ Pata Ishara</button>
 
   <div id="modal">
     <div id="modalContent">
-      <h2>⛔️ Upatikanaji Umezuiliwa</h2>
-      <p>Kupata ishara zote motomoto 🔥 na kuongeza odds zako za <strong>kubeba chuma💰</strong>, bofya hapa chini kujisajili sasa:</p>
-      <a href="https://affpa.top/L?tag=d_4299217m_2804c_&site=4299217&ad=2804&r=registration" target="_blank">🏁 Jisajili Haraka</a>
+      <h2>🔒 Upatikanaji Umefungwa</h2>
+      <p>Jisajili sasa ili kuona ishara zote na kuongeza nafasi zako za <strong>kuvuna ushindi 🤑</strong>!</p>
+      <a href="https://affpa.top/L?tag=d_4299217m_2804c_&site=4299217&ad=2804&r=registration" target="_blank">✨ Jisajili Hapa</a>
     </div>
   </div>
 
@@ -108,8 +111,8 @@
     let signalCount = 0;
 
     function getRandomSignal() {
-      const coefficient = (Math.random() * 1.5 + 1).toFixed(2);
-      return 🔥 Ishara #${signalCount}: Kuzidisha kutakuwa ${coefficient}x;
+      const coefficient = (Math.random() * 2.5 + 1.5).toFixed(2);
+      return 📊 Ishara #${signalCount}: Kuzidisha kutakuwa ${coefficient}x;
     }
 
     btn.addEventListener('click', () => {
@@ -122,11 +125,10 @@
       if (signalCount === 2) {
         setTimeout(() => {
           modal.style.visibility = 'visible';
-        }, 1000);
+        }, 800);
       }
     });
 
-    // Funga modal ukibonyeza nje ya boksi
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
         modal.style.visibility = 'hidden';
