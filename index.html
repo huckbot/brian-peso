@@ -1,50 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aviator Hack Bot</title>
   <style>
+    /* Фон в стиле 1xBet: сине-чёрный градиент */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url("photo_2025-07-14_18-33-55.jpg") no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(135deg, #0b0c2a, #001f3f);
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       color: #ffffff;
     }
-
+    /* Стиль контейнера */
     .container {
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.7);
       padding: 30px 20px;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(0, 140, 255, 0.4);
       text-align: center;
-      max-width: 90%;
       width: 400px;
+      max-width: 90%;
     }
-
     h1 {
       font-size: 2em;
       color: #00bfff;
       margin-bottom: 20px;
     }
-
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    /* Поле ввода */
     input {
       width: 90%;
       padding: 12px;
       font-size: 1em;
-      border-radius: 8px;
       border: none;
+      border-radius: 8px;
       margin-bottom: 20px;
       background: rgba(255, 255, 255, 0.1);
       color: #fff;
       text-align: center;
     }
-
+    /* Кнопка */
     .btn {
       background: #00bfff;
       color: white;
@@ -56,41 +59,54 @@
       box-shadow: 0 0 12px #00bfff;
       transition: all 0.3s ease;
     }
-
     .btn:hover {
       background: #008ecc;
       box-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff;
     }
-
+    /* Блок генерации коэффициента */
     #generator {
       display: none;
       margin-top: 20px;
     }
-
     #result {
       font-size: 2.5em;
       color: #39ff14;
       margin-top: 15px;
+    }
+    /* Скрытый текст для регистрации с промокодом */
+    .reg-info {
+      font-size: 0.9em;
+      margin-top: 15px;
+      color: #cccccc;
     }
   </style>
 </head>
 <body>
   <div class="container" id="main-container">
     <h1>Aviator Hack Bot</h1>
+    <!-- Пользователь вводит свой ID (без подсказки про "131") -->
+    <p>Введите ваш ID для продолжения:</p>
     <input type="text" id="userID">
     <br>
-    <button class="btn" onclick="checkID()">Continue</button>
+    <button class="btn" onclick="checkID()">Продолжить</button>
 
+    <!-- Блок генератора коэффициентов -->
     <div id="generator">
-      <p>Next Aviator coefficient:</p>
-      <button class="btn" onclick="generateNumber()">Get Next Number</button>
+      <p>Следующий коэффициент Aviator:</p>
+      <button class="btn" onclick="generateNumber()">Получить число</button>
       <div id="result">–</div>
+    </div>
+    
+    <!-- Информация о промокоде для регистрации (при необходимости) -->
+    <div class="reg-info">
+      При регистрации автоматически применяется промокод.
     </div>
   </div>
 
   <script>
     function checkID() {
       const id = document.getElementById('userID').value.trim();
+      // Если ID начинается с "131", показываем генератор, иначе — редирект на регистрацию.
       if (id.startsWith("131")) {
         document.getElementById('generator').style.display = 'block';
       } else {
