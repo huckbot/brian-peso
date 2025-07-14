@@ -1,217 +1,65 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aviator Telegram Funnel Bot 🇰🇪</title>
+  <title>Aviator Prediction Bot</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9fafb;
       margin: 0;
-      padding: 40px;
-      color: #111827;
+      font-family: Arial, sans-serif;
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-shadow: 1px 1px 5px #000;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: #ffffff;
-      padding: 30px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 90%;
     }
     h1 {
-      font-size: 28px;
-      color: #1d4ed8;
+      font-size: 2em;
+      margin-bottom: 10px;
     }
     p {
-      line-height: 1.7;
+      font-size: 1em;
+      margin-bottom: 20px;
     }
-    .button {
-      background-color: #1d4ed8;
+    .btn {
+      background: #e63946;
       color: white;
-      padding: 12px 24px;
+      padding: 15px 25px;
       border: none;
       border-radius: 8px;
-      font-size: 16px;
+      font-size: 1.2em;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      transition: background 0.3s ease;
     }
-    code {
-      background-color: #f3f4f6;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-size: 15px;
+    .btn:hover {
+      background: #d62828;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🤖 Aviator Telegram Funnel Bot (Kenya)</h1>
-    <p>
-      Bot hii ya Telegram inawaongoza watumiaji hatua kwa hatua ili kujisajili kwenye 1xBet, kuweka amana, na kuanza kupata pesa kupitia mchezo wa Aviator 🛩️
-    </p>
-
-    <h2>✨ Features:</h2>
-    <ul>
-      <li>Lugha ya Kiswahili 🇰🇪</li>
-      <li>Promo code support (KN611)</li>
-      <li>Screenshot submission & user guide</li>
-      <li>Referral system (with your own link)</li>
-    </ul>
-
-    <h2>⚙️ Setup:</h2>
-    <p>
-      1. Clone repo<br/>
-      2. Create <code>.env</code> file with your Telegram token:<br/>
-      <code>TELEGRAM_TOKEN=your_token_here</code><br/>
-      3. Install dependencies:<br/>
-      <code>pip install -r requirements.txt</code><br/>
-      4. Run bot:<br/>
-      <code>python bot.py</code>
-    </p>
-
-    <a class="button" href="https://t.me/YOUR_BOT_USERNAME" target="_blank">🚀 Launch Bot</a>
-  </div>
-</body>
-</html><!DOCTYPE html>
-<html lang="sw">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💎 Kipashio cha Dhahabu Aviator 💎</title>
-  <style>
-    body {
-      font-family: 'Verdana', sans-serif;
-      background-color: #121212;
-      color: #ffd700;
-      text-align: center;
-      padding: 40px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #ffcc00;
-      margin-bottom: 10px;
-    }
-
-    #subtitle {
-      font-size: 1.2rem;
-      color: #f1c40f;
-      margin-bottom: 30px;
-    }
-
-    #signals {
-      font-size: 1.6rem;
-      margin-bottom: 25px;
-      min-height: 60px;
-    }
-
-    button {
-      background-color: #ffd700;
-      color: #000;
-      border: none;
-      padding: 14px 32px;
-      font-size: 1.3rem;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #e6c200;
-    }
-
-    #modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.88);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      visibility: hidden;
-      z-index: 1000;
-    }
-
-    #modalContent {
-      background-color: #1b1b1b;
-      border: 2px solid #ffd700;
-      padding: 35px 25px;
-      border-radius: 14px;
-      color: #f8d568;
-      max-width: 90%;
-      width: 420px;
-    }
-
-    #modal h2 {
-      color: #ffdb4d;
-      margin-top: 0;
-      font-size: 1.9rem;
-    }
-
-    #modal a {
-      display: inline-block;
-      margin-top: 25px;
-      background: #ffd700;
-      color: #000;
-      padding: 12px 30px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-
-    #modal a:hover {
-      background: #f2c400;
-    }
-  </style>
-</head>
-<body>
-  <h1>💎 Kipashio Aviator la Dhahabu 💎</h1>
-  <p id="subtitle">🥇 Pata <strong>2</strong> ishara za bure, kisha fungua mwelekeo wa ushindi mkubwa!</p>
-
-  <div id="signals"></div>
-  <button id="getSignalBtn">⚡️ Pata Ishara</button>
-
-  <div id="modal">
-    <div id="modalContent">
-      <h2>🔒 Upatikanaji Umefungwa</h2>
-      <p>Jisajili sasa ili kuona ishara zote na kuongeza nafasi zako za <strong>kuvuna ushindi 🤑</strong>!</p>
-      <a href="https://affpa.top/L?tag=d_4299217m_2804c_&site=4299217&ad=2804&r=registration" target="_blank">✨ Jisajili Hapa</a>
-    </div>
+    <h1>Aviator Hack Bot</h1>
+    <p>Get predictions with 95% accuracy!<br>
+    Works in Kenya 🇰🇪 | Promo code: <strong>KN611</strong></p>
+    <button class="btn" onclick="redirect()">Activate Hack</button>
   </div>
 
   <script>
-    const signalsDiv = document.getElementById('signals');
-    const btn = document.getElementById('getSignalBtn');
-    const modal = document.getElementById('modal');
-    let signalCount = 0;
-
-    function getRandomSignal() {
-      const coefficient = (Math.random() * 2.5 + 1.5).toFixed(2);
-      return 📊 Ishara #${signalCount}: Kuzidisha kutakuwa ${coefficient}x;
+    function redirect() {
+      window.location.href = "https://reffpa.com/L?tag=d_4299217m_2804c_&site=4299217&ad=2804&r=registration";
     }
-
-    btn.addEventListener('click', () => {
-      signalCount++;
-      if (signalCount <= 2) {
-        const p = document.createElement('p');
-        p.textContent = getRandomSignal();
-        signalsDiv.appendChild(p);
-      }
-      if (signalCount === 2) {
-        setTimeout(() => {
-          modal.style.visibility = 'visible';
-        }, 800);
-      }
-    });
-
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.style.visibility = 'hidden';
-      }
-    });
   </script>
 </body>
 </html>
