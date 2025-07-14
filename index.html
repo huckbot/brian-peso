@@ -8,7 +8,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0b0c2a, #001f3f);
+      background: url("photo_2025-07-14_18-33-55.jpg") no-repeat center center fixed;
+      background-size: cover;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -17,7 +18,7 @@
     }
 
     .container {
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.65);
       padding: 30px 20px;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(0, 140, 255, 0.4);
@@ -39,6 +40,9 @@
       border-radius: 8px;
       border: none;
       margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-align: center;
     }
 
     .btn {
@@ -73,8 +77,7 @@
 <body>
   <div class="container" id="main-container">
     <h1>Aviator Hack Bot</h1>
-    <p>Enter your 1xBet ID to continue</p>
-    <input type="text" id="userID" placeholder="e.g. 131456789">
+    <input type="text" id="userID">
     <br>
     <button class="btn" onclick="checkID()">Continue</button>
 
